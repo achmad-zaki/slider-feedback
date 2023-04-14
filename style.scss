@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+$colorWhite: #FFFFFF;
+$colorBackground: #1A1A1A;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: $colorBackground;
+    color: $colorWhite;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.page-content {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        .page-title {
+            h1 {
+                font-size: 64px;
+                color: transparent;
+                background-image: linear-gradient(to right, #582FFB, #FF4DCD, #FC974E);
+                background-clip: text;
+                width: 60%;
+            }
+            p {
+                font-size: 16px;
+                width: 70%;
+                line-height: 34px;
+                opacity: 60%;
+            }
+        }
+        .content-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .btn {
+                padding: 20px;
+                border: none;
+                background-color: rgba(255, 255, 255, 0.05);
+                border-radius: 6px;
+                cursor: pointer;
+                i {
+                    font-size: 24px;
+                    opacity: 100%;
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+    // card
+    .swiper {
+        width: 90%;
+        height: 100%;
+        .swiper-wrapper {
+            display: flex;
+            .swiper-slide {
+                background: rgba(255, 255, 255, 0.03);
+                padding: 30px;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                .feedback-user {
+                    line-height: 34px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .rating {
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 8px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    color: #FFB800;
+                }
+                .img-avatar {
+                    margin-bottom: 8px;
+                    img {
+                        width: 50px;
+                    }
+                }
+                .title-user {
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+.page-content {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.page-content .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.page-content .page-header .page-title h1 {
+  font-size: 64px;
+  color: transparent;
+  background-image: linear-gradient(to right, #582FFB, #FF4DCD, #FC974E);
+  -webkit-background-clip: text;
+          background-clip: text;
+  width: 60%;
+}
+.page-content .page-header .page-title p {
+  font-size: 16px;
+  width: 70%;
+  line-height: 34px;
+  opacity: 60%;
+}
+.page-content .page-header .content-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-content .page-header .content-btn .btn {
+  padding: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.page-content .page-header .content-btn .btn i {
+  font-size: 24px;
+  opacity: 100%;
+  color: #FFFFFF;
+}
+.page-content .swiper {
+  width: 90%;
+  height: 100%;
+}
+.page-content .swiper .swiper-wrapper {
+  display: flex;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .feedback-user {
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .rating {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #FFB800;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .img-avatar {
+  margin-bottom: 8px;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .img-avatar img {
+  width: 50px;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .title-user h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.page-content .swiper .swiper-wrapper .swiper-slide .title-user p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=style.css.map */
